@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+    font-size: 100%; /* 瀏覽器預設字體大小，一般是16px */
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.7; /* 設定行高 */
+    color: rgb(3, 3, 3); /* 設定文字顏色 */
+}
+
+a {
+    text-decoration: none; /* 去除超連結底線 */
+}
+
+img {
+    max-width: 100%; /* 設定影像寬度上限為父元素的100% */
+}
+
+/* HEADER
+------------------------------- */
+.logo {
+    width: 100px; /* 設定logo影像的寬度 */
+    margin-top: 14px; /* 視窗上方保持 14px 距離*/
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase; /* 英文字都大寫 */
+    margin-top: 34px;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 36px;
+}
+
+.main-nav a {
+    color: rgb(255, 255, 255);
+}
+
+.main-nav a:hover {
+    color: #0bd;
+}
+
+.page-header {
+    display: flex; /* 讓元素水平排列 */
+    justify-content: space-between; /* 把最初與最後元素放在父元素的左右兩端 */
+}
+
+.wrapper {
+    max-width: 1100px; /* 設定最大寬度 */
+    margin: 0 auto; /* 置中對齊*/
+    padding: 0 4%; /* 設定內側留白空間 */
+}
+
+/* HOME
+------------------------------- */
+.home-content {
+    text-align: center; /* 文字置中對齊 */
+    margin-top: 10%; /* 上方留白 */
+}
+
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+    color: #fff;
+}
+
+/* 標題 */
+.page-title {
+    font-size: 5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/* 按鈕 */
+.button {
+    font-size: 1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 20px; /* 設定圓角 */
+    padding: 18px 32px;
+}
+
+.button:hover {
+    background: #0090aa;
+}
+
+/* 大型背景影像 */
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#home {
+    background-image: url(../images/main-bg.jpg);
+    min-height: 100vh;
+}
+
+#home .page-title {
+    text-transform: none;
+}
